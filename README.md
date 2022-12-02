@@ -23,7 +23,6 @@ kubectl get cm -n prom-ns prometheus-server -o yaml |  sed -e 's|min_shards: 1|m
 1. ***Update a value in Prometheus metric configuration, say max and min shards***
 
 ```
-kubectl get cm -n prom-ns prometheus-server -o json |  sed -e 's|max_shards: 1000|max_shards: 50|' | kubectl apply -f -
-kubectl get cm -n prom-ns prometheus-server -o json |  sed -e 's|min_shards: 1|min_shards: 4|'     | kubectl apply -f -
+COMING SOON-
 ```
 
